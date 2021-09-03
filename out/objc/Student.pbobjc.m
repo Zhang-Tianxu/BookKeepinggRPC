@@ -108,6 +108,96 @@ typedef struct Student__storage_ {
 
 @end
 
+#pragma mark - HelloStuRequest
+
+@implementation HelloStuRequest
+
+@dynamic msg;
+
+typedef struct HelloStuRequest__storage_ {
+  uint32_t _has_storage_[1];
+  NSString *msg;
+} HelloStuRequest__storage_;
+
+// This method is threadsafe because it is initially called
+// in +initialize for each subclass.
++ (GPBDescriptor *)descriptor {
+  static GPBDescriptor *descriptor = nil;
+  if (!descriptor) {
+    static GPBMessageFieldDescription fields[] = {
+      {
+        .name = "msg",
+        .dataTypeSpecific.clazz = Nil,
+        .number = HelloStuRequest_FieldNumber_Msg,
+        .hasIndex = 0,
+        .offset = (uint32_t)offsetof(HelloStuRequest__storage_, msg),
+        .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldClearHasIvarOnZero),
+        .dataType = GPBDataTypeString,
+      },
+    };
+    GPBDescriptor *localDescriptor =
+        [GPBDescriptor allocDescriptorForClass:[HelloStuRequest class]
+                                     rootClass:[StudentRoot class]
+                                          file:StudentRoot_FileDescriptor()
+                                        fields:fields
+                                    fieldCount:(uint32_t)(sizeof(fields) / sizeof(GPBMessageFieldDescription))
+                                   storageSize:sizeof(HelloStuRequest__storage_)
+                                         flags:(GPBDescriptorInitializationFlags)(GPBDescriptorInitializationFlag_UsesClassRefs | GPBDescriptorInitializationFlag_Proto3OptionalKnown)];
+    #if defined(DEBUG) && DEBUG
+      NSAssert(descriptor == nil, @"Startup recursed!");
+    #endif  // DEBUG
+    descriptor = localDescriptor;
+  }
+  return descriptor;
+}
+
+@end
+
+#pragma mark - HelloStuReply
+
+@implementation HelloStuReply
+
+@dynamic msg;
+
+typedef struct HelloStuReply__storage_ {
+  uint32_t _has_storage_[1];
+  NSString *msg;
+} HelloStuReply__storage_;
+
+// This method is threadsafe because it is initially called
+// in +initialize for each subclass.
++ (GPBDescriptor *)descriptor {
+  static GPBDescriptor *descriptor = nil;
+  if (!descriptor) {
+    static GPBMessageFieldDescription fields[] = {
+      {
+        .name = "msg",
+        .dataTypeSpecific.clazz = Nil,
+        .number = HelloStuReply_FieldNumber_Msg,
+        .hasIndex = 0,
+        .offset = (uint32_t)offsetof(HelloStuReply__storage_, msg),
+        .flags = (GPBFieldFlags)(GPBFieldOptional | GPBFieldClearHasIvarOnZero),
+        .dataType = GPBDataTypeString,
+      },
+    };
+    GPBDescriptor *localDescriptor =
+        [GPBDescriptor allocDescriptorForClass:[HelloStuReply class]
+                                     rootClass:[StudentRoot class]
+                                          file:StudentRoot_FileDescriptor()
+                                        fields:fields
+                                    fieldCount:(uint32_t)(sizeof(fields) / sizeof(GPBMessageFieldDescription))
+                                   storageSize:sizeof(HelloStuReply__storage_)
+                                         flags:(GPBDescriptorInitializationFlags)(GPBDescriptorInitializationFlag_UsesClassRefs | GPBDescriptorInitializationFlag_Proto3OptionalKnown)];
+    #if defined(DEBUG) && DEBUG
+      NSAssert(descriptor == nil, @"Startup recursed!");
+    #endif  // DEBUG
+    descriptor = localDescriptor;
+  }
+  return descriptor;
+}
+
+@end
+
 
 #pragma clang diagnostic pop
 

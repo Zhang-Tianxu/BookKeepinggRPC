@@ -1,9 +1,23 @@
 syntax = "proto3";
+
 package main;
+
 option go_package = "./";
 
 message Student {
   string name = 1;
   bool male = 2;
   repeated int32 scores = 3;
+}
+
+message HelloStuRequest {
+  string msg = 1;
+}
+
+message HelloStuReply {
+  string msg = 1;
+}
+
+service helloStu {
+  rpc SayHello (HelloStuRequest) returns (HelloStuReply) {}
 }

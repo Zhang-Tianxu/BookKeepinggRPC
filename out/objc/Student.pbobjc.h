@@ -64,6 +64,30 @@ GPB_FINAL @interface Student : GPBMessage
 
 @end
 
+#pragma mark - HelloStuRequest
+
+typedef GPB_ENUM(HelloStuRequest_FieldNumber) {
+  HelloStuRequest_FieldNumber_Msg = 1,
+};
+
+GPB_FINAL @interface HelloStuRequest : GPBMessage
+
+@property(nonatomic, readwrite, copy, null_resettable) NSString *msg;
+
+@end
+
+#pragma mark - HelloStuReply
+
+typedef GPB_ENUM(HelloStuReply_FieldNumber) {
+  HelloStuReply_FieldNumber_Msg = 1,
+};
+
+GPB_FINAL @interface HelloStuReply : GPBMessage
+
+@property(nonatomic, readwrite, copy, null_resettable) NSString *msg;
+
+@end
+
 NS_ASSUME_NONNULL_END
 
 CF_EXTERN_C_END
