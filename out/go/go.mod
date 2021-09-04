@@ -1,4 +1,4 @@
-module github.com/Zhang-Tianxu/BookKeepinggRPC/tree/master/out/go
+module github.com/Zhang-Tianxu/BookKeepinggRPC/out/go
 
 go 1.17
 
