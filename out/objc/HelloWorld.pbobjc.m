@@ -36,7 +36,7 @@ static GPBFileDescriptor *HelloWorldRoot_FileDescriptor(void) {
   static GPBFileDescriptor *descriptor = NULL;
   if (!descriptor) {
     GPB_DEBUG_CHECK_RUNTIME_VERSIONS();
-    descriptor = [[GPBFileDescriptor alloc] initWithPackage:@"go"
+    descriptor = [[GPBFileDescriptor alloc] initWithPackage:@"trpc.test.go_hello"
                                                      syntax:GPBFileSyntaxProto3];
   }
   return descriptor;
