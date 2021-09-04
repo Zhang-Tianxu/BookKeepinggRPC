@@ -10,11 +10,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.1'
   s.osx.deployment_target = '10.9'
 
-  s.source_files = 'out/objc/*'
-  s.public_header_files = 'out/objc/*.h'
+  s.source_files = 'out/objc*/*'
+  s.public_header_files = 'out/objc*/*.h'
   s.static_framework = true
 
   s.dependency "Protobuf"
+  s.dependency "gRPC-ProtoRPC"
   s.requires_arc = false
 
   # Run protoc with the Objective-C and gRPC plugins to generate protocol messages and gRPC clients.
