@@ -1,4 +1,4 @@
-module hello
+module github.com/Zhang-Tianxu/BookKeepinggRPC/tree/master/out/go
 
 go 1.17
 
