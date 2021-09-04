@@ -16,14 +16,14 @@
 // Designated initializer
 - (instancetype)initWithHost:(NSString *)host callOptions:(GRPCCallOptions *_Nullable)callOptions {
   return [super initWithHost:host
-                 packageName:@"helloworld"
+                 packageName:@"go"
                  serviceName:@"Greeter"
                  callOptions:callOptions];
 }
 
 - (instancetype)initWithHost:(NSString *)host {
   return [super initWithHost:host
-                 packageName:@"helloworld"
+                 packageName:@"go"
                  serviceName:@"Greeter"];
 }
 
