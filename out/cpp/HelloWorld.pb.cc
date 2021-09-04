@@ -75,12 +75,13 @@ const char descriptor_table_protodef_HelloWorld_2eproto[] PROTOBUF_SECTION_VARIA
   "equest\022\014\n\004name\030\001 \001(\t\"\035\n\nHelloReply\022\017\n\007me"
   "ssage\030\001 \001(\t2I\n\007Greeter\022>\n\010SayHello\022\030.hel"
   "loworld.HelloRequest\032\026.helloworld.HelloR"
-  "eply\"\000B4\n\033io.grpc.examples.helloworldB\017H"
-  "elloWorldProtoP\001Z\002./b\006proto3"
+  "eply\"\000Bf\n\033io.grpc.examples.helloworldB\017H"
+  "elloWorldProtoP\001Z4github.com/Zhang-Tianx"
+  "u/BookKeepinggRPC/out/go/hellob\006proto3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_HelloWorld_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_HelloWorld_2eproto = {
-  false, false, 228, descriptor_table_protodef_HelloWorld_2eproto, "HelloWorld.proto", 
+  false, false, 278, descriptor_table_protodef_HelloWorld_2eproto, "HelloWorld.proto", 
   &descriptor_table_HelloWorld_2eproto_once, nullptr, 0, 2,
   schemas, file_default_instances, TableStruct_HelloWorld_2eproto::offsets,
   file_level_metadata_HelloWorld_2eproto, file_level_enum_descriptors_HelloWorld_2eproto, file_level_service_descriptors_HelloWorld_2eproto,
